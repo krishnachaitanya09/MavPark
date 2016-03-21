@@ -1,0 +1,32 @@
+package edu.uta.mavpark.data;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import edu.uta.mavpark.data.UserInfoContract.UserInfoEntry;
+
+/**
+ * Created by krish on 3/18/2016.
+ */
+public class MavParkDbHelper extends SQLiteOpenHelper {
+    // If you change the database schema, you must increment the database version.
+    public static final int DATABASE_VERSION = 1;
+    public static final String DATABASE_NAME = "MavPark.db";
+
+    public MavParkDbHelper(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    }
+    public void onCreate(SQLiteDatabase db) {
+        final String SQL_CREATE_ENTRIES =  "CREATE TABLE " + UserInfoEntry.TABLE_NAME + " (" +
+                UserInfoEntry.COLUMN_NAME_EMAIL + " TEXT PRIMARY KEY," +
+                UserInfoEntry.COLUMN_NAME_NAME + " TEXT"+
+        " )";
+        db.execSQL(SQL_CREATE_ENTRIES);
+    }
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // This database is only a cache for online data, so its upgrade policy is
+        // to simply to discard the data and start over
+        db.execSQL("DROP TABLE IF EXISTS " + UserInfoEntry.TABLE_NAME);
+        onCreate(db);
+    }
+}
