@@ -17,10 +17,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import edu.uta.mavpark.models.ErrorModel;
 import edu.uta.mavpark.models.RegisterModel;
 import edu.uta.mavpark.requests.Account;
 import edu.uta.mavpark.requests.RestService;
 import retrofit2.Call;
+import retrofit2.Response;
 
 /**
  * A login screen that offers login via email/password.
@@ -205,9 +210,17 @@ public class RegisterActivity extends AppCompatActivity {
             Call<Void> call = account.register(registerModel.name, registerModel.utaId, registerModel.email, registerModel.password, registerModel.confirmPassword,
                     registerModel.role);
             try {
-                if (call.execute().isSuccessful()) {
+               Response response = call.execute();
+                if (response.isSuccessful()) {
                     return true;
                 } else {
+                    Gson gson = new GsonBuilder().create();
+                    final ErrorModel errorModel = gson.fromJson(response.errorBody().string(), ErrorModel.class);
+                    ((RegisterActivity) context).runOnUiThread(new Runnable() {
+                        public void run() {
+                            Toast.makeText(context, errorModel.Message.toString(), Toast.LENGTH_LONG).show();
+                        }
+                    });
                     return false;
                 }
             } catch (Exception e) {
@@ -227,8 +240,6 @@ public class RegisterActivity extends AppCompatActivity {
                 Intent intent = new Intent(context, LoginActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-            } else {
-                Toast.makeText(RegisterActivity.this, "Unable to register. Please check the details and try again", Toast.LENGTH_LONG).show();
             }
         }
 

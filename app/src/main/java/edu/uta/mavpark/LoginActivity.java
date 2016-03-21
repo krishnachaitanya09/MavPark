@@ -22,6 +22,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import edu.uta.mavpark.data.MavParkDbHelper;
 import edu.uta.mavpark.data.UserInfoContract;
 import edu.uta.mavpark.models.LoginModel;
@@ -30,6 +33,7 @@ import edu.uta.mavpark.models.UserInfo;
 import edu.uta.mavpark.requests.Account;
 import edu.uta.mavpark.requests.RestService;
 import retrofit2.Call;
+import retrofit2.Response;
 
 /**
  * A login screen that offers login via email/password.
@@ -237,6 +241,7 @@ public class LoginActivity extends AppCompatActivity {
         private final String mEmail;
         private final String mPassword;
         private final Context context;
+        private Token token;
 
         UserLoginTask(Context context, String email, String password) {
             this.context = context;
@@ -250,11 +255,12 @@ public class LoginActivity extends AppCompatActivity {
             LoginModel loginModel = new LoginModel(mEmail, mPassword);
             Call<Token> call = account.token(loginModel.username, loginModel.password, loginModel.grant_type);
             try {
-                final Token token = call.execute().body();
-                SharedPreferences settings = getSharedPreferences("LoginPref", 0);
-                SharedPreferences.Editor editor = settings.edit();
-                if (token != null) {
-                    if (token.Error == null) {
+                Response<Token> response = call.execute();
+                if (response.isSuccessful()) {
+                    token = response.body();
+                    SharedPreferences settings = getSharedPreferences("LoginPref", 0);
+                    SharedPreferences.Editor editor = settings.edit();
+                    if (token != null) {
                         editor.putString("token", token.AccessToken);
                         editor.putString("issued", token.Issued.toString());
                         editor.putString("expires", token.Expires.toString());
@@ -280,7 +286,6 @@ public class LoginActivity extends AppCompatActivity {
                     } else {
                         ((LoginActivity) context).runOnUiThread(new Runnable() {
                             public void run() {
-                                Toast.makeText(context, token.Error.toString(), Toast.LENGTH_LONG).show();
                                 Toast.makeText(context, "Please check the login details and try again", Toast.LENGTH_LONG).show();
                             }
                         });
@@ -290,9 +295,11 @@ public class LoginActivity extends AppCompatActivity {
                         return false;
                     }
                 } else {
+                    Gson gson = new GsonBuilder().create();
+                    token = gson.fromJson(response.errorBody().string(), Token.class);
                     ((LoginActivity) context).runOnUiThread(new Runnable() {
                         public void run() {
-                            Toast.makeText(context, "Please check the login details", Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, token.Error.toString(), Toast.LENGTH_LONG).show();
                         }
                     });
                 }

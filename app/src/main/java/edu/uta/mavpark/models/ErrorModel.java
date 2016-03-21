@@ -1,17 +1,17 @@
 package edu.uta.mavpark.models;
 
-import java.util.Dictionary;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.Map;
 
 /**
  * Created by krish on 3/21/2016.
  */
 public class ErrorModel {
-
-    public ErrorModel(String message, Dictionary<String, String[]> modelState) {
-        this.message = message;
-        this.modelState = modelState;
-    }
-
-    private String message;
-    private Dictionary<String, String[]> modelState;
+    @SerializedName("Message")
+    public String Message;
+    @SerializedName("ModelState")
+    public Map<String, String[]> ModelState;
+    @SerializedName("error_description")
+    public String Error;
 }

@@ -13,6 +13,6 @@ public class Token {
     public Date Issued;
     @SerializedName(".expires")
     public Date Expires;
-    @SerializedName("error")
+    @SerializedName("error_description")
     public String Error;
 }
