@@ -39,7 +39,7 @@ public class RestService {
             }
         }).build();
         Gson gson = new GsonBuilder()
-                .setDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz")
+                .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
                 .create();
         retrofit = new Retrofit.Builder()
                 .baseUrl(URL)
