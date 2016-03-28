@@ -17,5 +17,4 @@ public class ParkingSpaceModel implements Serializable {
     public boolean IsAvailable;
     @SerializedName("LastUpdated")
     public Date LastUpdated;
-
 }

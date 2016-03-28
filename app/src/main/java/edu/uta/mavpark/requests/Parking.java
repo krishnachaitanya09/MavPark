@@ -13,5 +13,5 @@ import retrofit2.http.Query;
 public interface Parking {
 
     @GET("ParkingLots")
-    public Call<ArrayList<ParkingLotModel>> getParkingLots(@Query("latitude") double latitude, @Query("longitude") double longitude);
+    public Call<ArrayList<ParkingLotModel>> getParkingLots(@Query("latitude") double latitude, @Query("longitude") double longitude, @Query("fromTime") String fromTime, @Query("toTime") String toTime);
 }
