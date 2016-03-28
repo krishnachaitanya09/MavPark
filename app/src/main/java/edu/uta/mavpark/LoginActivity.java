@@ -251,6 +251,7 @@ public class LoginActivity extends AppCompatActivity {
 
         @Override
         protected Boolean doInBackground(Void... params) {
+            restService = new RestService(context, true);
             Account account = restService.create(Account.class);
             LoginModel loginModel = new LoginModel(mEmail, mPassword);
             Call<Token> call = account.token(loginModel.username, loginModel.password, loginModel.grant_type);

@@ -35,6 +35,7 @@ public class PermitAdapter extends ArrayAdapter<PermitModel> {
         TextView dateTextView = (TextView) convertView.findViewById(R.id.list_item_date_textview);
         TextView monthTextView = (TextView) convertView.findViewById(R.id.list_item_month_textview);
         TextView licensePlateIdTextView = (TextView) convertView.findViewById(R.id.list_item_licensePlateId_textview);
+        TextView parkingLotTextView = (TextView)convertView.findViewById(R.id.list_item_parkingLot_textView);
         Calendar cal = Calendar.getInstance();
         cal.setTime(permit.ToDateTime);
         dateTextView.setText(new SimpleDateFormat("dd").format(cal.getTime()));
@@ -50,6 +51,7 @@ public class PermitAdapter extends ArrayAdapter<PermitModel> {
         }
 
         licensePlateIdTextView.setText(permit.LicensePlateId);
+        parkingLotTextView.setText(permit.ParkingLotId);
         // Return the completed view to render on screen
         return convertView;
     }

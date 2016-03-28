@@ -12,6 +12,8 @@ public class PermitModel {
     public String UserId;
     @SerializedName("LicensePlateId")
     public String LicensePlateId;
+    @SerializedName("ParkingLotId")
+    public String ParkingLotId;
     @SerializedName("FromDateTime")
     public Date FromDateTime;
     @SerializedName("ToDateTime")

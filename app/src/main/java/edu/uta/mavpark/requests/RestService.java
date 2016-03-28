@@ -20,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class RestService {
     private final Context context;
-    private static final String URL = "http://192.168.0.7:6223/api/";
+    private static final String URL = "http://192.168.0.17:6223/api/";
     private Retrofit retrofit;
 
     public RestService(final Context context) {
@@ -40,6 +40,31 @@ public class RestService {
         }).build();
         Gson gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+                .create();
+        retrofit = new Retrofit.Builder()
+                .baseUrl(URL)
+                .client(client)
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+    }
+
+    public RestService(final Context context, boolean isLogin) {
+        this.context = context;
+        OkHttpClient client = new OkHttpClient.Builder().addInterceptor(new Interceptor() {
+            @Override
+            public Response intercept(Chain chain) throws IOException {
+                SharedPreferences settings = context.getSharedPreferences("LoginPref", 0);
+                Request original = chain.request();
+                // Request customization: add request headers
+                Request.Builder requestBuilder = original.newBuilder()
+                        .header("Authorization", "Bearer " + settings.getString("token", ""))
+                        .method(original.method(), original.body());
+                Request request = requestBuilder.build();
+                return chain.proceed(request);
+            }
+        }).build();
+        Gson gson = new GsonBuilder()
+                .setDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz")
                 .create();
         retrofit = new Retrofit.Builder()
                 .baseUrl(URL)

@@ -7,7 +7,9 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeight"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,7 +21,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif-condensed"
             android:textSize="@dimen/abc_text_size_medium_material" />
 
         <TextView
@@ -27,7 +28,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif-condensed"
             android:textSize="@dimen/abc_text_size_small_material" />
     </LinearLayout>
 
@@ -37,7 +37,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/text_margin"
-        android:fontFamily="sans-serif-condensed"
         android:textAppearance="?android:textAppearanceSmall"
         android:textSize="@dimen/abc_text_size_medium_material" />
+
+    <TextView
+        android:id="@+id/list_item_parkingLot_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
 </LinearLayout>

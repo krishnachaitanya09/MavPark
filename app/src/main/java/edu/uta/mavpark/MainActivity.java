@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.getMenu().getItem(0).setChecked(true);
         onNavigationItemSelected(navigationView.getMenu().getItem(0));
         View header = navigationView.getHeaderView(0);
         initNavigationDrawerProfile(header);
@@ -127,11 +128,12 @@ public class MainActivity extends AppCompatActivity
         } else*/
         if (id == R.id.nav_share) {
 
-        }
-        else if (id == R.id.nav_permit) {
+        } else if (id == R.id.nav_permit) {
             Fragment permitFragment = new PermitFragment();
             transaction.replace(R.id.fragmentContainer, permitFragment);
-
+        } else if (id == R.id.nav_reserveParking) {
+            Fragment reserveParkingFragmentFragment = new ReserveParkingFragment();
+            transaction.replace(R.id.fragmentContainer, reserveParkingFragmentFragment);
         } else if (id == R.id.nav_send) {
 
         }
