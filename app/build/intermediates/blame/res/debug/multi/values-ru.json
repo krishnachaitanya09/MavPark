@@ -951,6 +951,82 @@
                         "endOffset": 2130
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 7026,
+                    "endColumn": 61,
+                    "endOffset": 7083
+                },
+                "from": {
+                    "file": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 61,
+                        "endOffset": 112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 7088,
+                    "endColumn": 46,
+                    "endOffset": 7130
+                },
+                "from": {
+                    "file": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 117,
+                        "endColumn": 46,
+                        "endOffset": 159
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 7135,
+                    "endColumn": 141,
+                    "endOffset": 7272
+                },
+                "from": {
+                    "file": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 164,
+                        "endColumn": 141,
+                        "endOffset": 301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 7277,
+                    "endColumn": 125,
+                    "endOffset": 7398
+                },
+                "from": {
+                    "file": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 306,
+                        "endColumn": 125,
+                        "endOffset": 427
+                    }
+                }
             }
         ]
     }

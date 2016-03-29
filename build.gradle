@@ -7,6 +7,10 @@ buildscript {
         maven {
             url 'http://dl.bintray.com/amulyakhare/maven'
         }
+
+        maven {
+            url 'http://dl.bintray.com/journeyapps/maven'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'

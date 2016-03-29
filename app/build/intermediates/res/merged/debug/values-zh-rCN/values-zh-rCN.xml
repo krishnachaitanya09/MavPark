@@ -50,4 +50,8 @@
     <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Google Play 服务正在更新"</string>
     <string msgid="411506735369601515" name="common_open_on_phone">"在手机上打开"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="zxing_app_name">条码扫描器</string>
+    <string name="zxing_button_ok">确定</string>
+    <string name="zxing_msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="zxing_msg_default_status">请将条码置于取景框内扫描。  </string>
 </resources>

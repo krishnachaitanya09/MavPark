@@ -50,4 +50,8 @@
     <string msgid="815008177440683245" name="common_google_play_services_updating_title">"‏يتم الآن تحديث خدمات Google Play."</string>
     <string msgid="411506735369601515" name="common_open_on_phone">"فتح على الهاتف"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="zxing_app_name">ماسح الرمز الشريطي</string>
+    <string name="zxing_button_ok">موافق</string>
+    <string name="zxing_msg_camera_framework_bug">عفوا، حدثت مشكلة في كاميرا جهاز Android. قد تحتاج إلى إعادة تشغيل الجهاز.</string>
+    <string name="zxing_msg_default_status">قم بوضع الرمز الشريطي داخل حدود صورة الكاميرا ليتم مسحه.</string>
 </resources>

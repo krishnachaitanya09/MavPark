@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
             Fragment permitFragment = new PermitFragment();
             transaction.replace(R.id.fragmentContainer, permitFragment);
         } else if (id == R.id.nav_reserveParking) {
-            Fragment reserveParkingFragmentFragment = new ReserveParkingFragment();
+            Fragment reserveParkingFragmentFragment = new ParkingLotFragment();
             transaction.replace(R.id.fragmentContainer, reserveParkingFragmentFragment);
         } else if (id == R.id.nav_send) {
 
