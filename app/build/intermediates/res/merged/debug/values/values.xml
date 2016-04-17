@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="parking_lots_array">
+        <item>Parking Lot P01</item>
+        <item>Parking Lot P02</item>
+        <item>Parking Lot P03</item>
+        <item>Parking Lot P04</item>
+        <item>Parking Lot P05</item>
+        <item>Parking Lot P06</item>
+        <item>Parking Lot P07</item>
+        <item>Parking Lot P08</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>

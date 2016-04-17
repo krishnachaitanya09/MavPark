@@ -1,15 +1,23 @@
 [
     {
-        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\layout\\design_layout_snackbar_include.xml"
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_reserve_parking_details.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_reserve_parking_details.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\layout\\design_navigation_item.xml"
     },
     {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_all_permit.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\list_item_all_permit.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
@@ -22,6 +30,14 @@
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_all_permits.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_all_permits.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_report.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_report.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
@@ -76,6 +92,10 @@
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_lines.xml"
     },
     {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_edit_parking_lot_details.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_edit_parking_lot_details.xml"
+    },
+    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
@@ -96,12 +116,12 @@
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
-        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\app_bar_main.xml"
-    },
-    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_permit.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_permit.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\app_bar_main.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_permit.xml",
@@ -122,6 +142,14 @@
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_reserve_parking.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_reserve_parking.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_remember_parking.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_remember_parking.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -152,10 +180,6 @@
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_parking_lot_details.xml",
-        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_parking_lot_details.xml"
-    },
-    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\zxing_capture.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\layout\\zxing_capture.xml"
     },
@@ -170,6 +194,10 @@
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_new_permit.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_new_permit.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -200,6 +228,10 @@
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_permit_details.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_permit_details.xml"
+    },
+    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
@@ -220,16 +252,24 @@
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_remember_parking.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\list_item_remember_parking.xml"
+    },
+    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_all_parking_lot.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_all_parking_lot.xml"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
@@ -246,9 +286,5 @@
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_parking_lot.xml",
-        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\layout\\fragment_parking_lot.xml"
     }
 ]

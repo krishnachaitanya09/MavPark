@@ -8,6 +8,10 @@
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_settings_logout.png",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings_logout.png"
+    },
+    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_add.png",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_add.png"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
@@ -102,6 +110,10 @@
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_permit.png",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_permit.png"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_pin_drop.png",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_pin_drop.png"
     },
     {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",

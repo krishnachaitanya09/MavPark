@@ -3,14 +3,18 @@ package edu.uta.mavpark;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -56,6 +60,20 @@ public class PermitFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_permit, container, false);
         // Get a reference to the ListView, and attach this adapter to it.
         mListView = (ListView) rootView.findViewById(R.id.listview_permit);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                Fragment permitDetailsFragment = new PermitDetailsFragment();
+                Bundle bundles = new Bundle();
+                bundles.putSerializable("permitConfirmation", (PermitModel)parent.getItemAtPosition(position));
+                permitDetailsFragment.setArguments(bundles);
+                transaction.replace(R.id.fragmentContainer, permitDetailsFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
         mProgressView = rootView.findViewById(R.id.permit_progress);
         return rootView;
     }
@@ -69,6 +87,12 @@ public class PermitFragment extends Fragment {
         showProgress(true);
         mGetPermitsTask = new GetPermitsTask(getActivity());
         mGetPermitsTask.execute((Void) null);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        menu.clear();
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR2)
@@ -129,14 +153,18 @@ public class PermitFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            showProgress(false);
-            permitListAdapter = new PermitAdapter(context, permits);
-            mListView.setAdapter(permitListAdapter);
+            if(isAdded())
+            {
+                showProgress(false);
+                permitListAdapter = new PermitAdapter(context, permits);
+                mListView.setAdapter(permitListAdapter);
+            }
         }
 
         @Override
         protected void onCancelled() {
             super.onCancelled();
+            if(isAdded())
             showProgress(true);
         }
     }

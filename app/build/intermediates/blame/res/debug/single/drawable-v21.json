@@ -28,11 +28,11 @@
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     },
     {
-        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
-        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
-    },
-    {
         "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
         "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "F:\\Masters\\SE\\Project\\MavPark\\MavPark\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     }
 ]

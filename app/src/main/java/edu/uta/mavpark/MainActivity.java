@@ -2,6 +2,7 @@ package edu.uta.mavpark;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -22,13 +23,14 @@ import edu.uta.mavpark.data.UserInfoContract;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -83,7 +85,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        //getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
@@ -115,16 +117,27 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
 
         } else*/
-        if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_permit) {
+        if (id == R.id.nav_permit) {
+            toolbar.setTitle("Permits");
             Fragment permitFragment = new PermitFragment();
             transaction.replace(R.id.fragmentContainer, permitFragment);
         } else if (id == R.id.nav_reserveParking) {
-            Fragment reserveParkingFragmentFragment = new ParkingLotFragment();
+            toolbar.setTitle("Reserve Parking");
+            Fragment reserveParkingFragmentFragment = new ReserveParkingFragment();
             transaction.replace(R.id.fragmentContainer, reserveParkingFragmentFragment);
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_remember) {
+            toolbar.setTitle("Remember Parking Space");
+            Fragment rememberParkingFragment = new RememberParkingFragment();
+            transaction.replace(R.id.fragmentContainer, rememberParkingFragment);
+        }else if(id == R.id.nav_report)
+        {
+            toolbar.setTitle("Report");
+            Fragment reportFragment = new ReportFragment();
+            transaction.replace(R.id.fragmentContainer, reportFragment);
+        }
+        else if(id==R.id.nav_logout){
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
         }
         transaction.commit();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

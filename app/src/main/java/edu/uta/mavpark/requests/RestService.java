@@ -20,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class RestService {
     private final Context context;
-    private static final String URL = "http://192.168.0.17:6223/api/";
+    private static final String URL = "http://192.168.0.5:6223/api/";
     private Retrofit retrofit;
 
     public RestService(final Context context) {
